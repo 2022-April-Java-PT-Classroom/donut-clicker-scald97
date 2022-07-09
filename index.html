@@ -4,10 +4,60 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheet.css">
     <title>Donut Clicker</title>
+  
   </head>
+
+
   <body>
-    <div class="container"></div>
-    <script src="./index.js"></script>
+    
+    <div class="nav">
+      <!-- <nav role="navigation">
+      <ul>
+        <li><a href="#home">Fred the Baker Baking Company</a></li>
+          <ul class="dropdown">
+             <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
+        </ul>
+        <li><a href="#inspo">The inspiration for this game, Cookie Game </a></li>
+          <ul class="dropdown">
+               <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
+          </ul>
+        <li><a href="#Contact">Contact</a></li>
+            <ul class="dropdown">
+               <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
+          </ul>
+      </ul> -->
+
+      <div class="dropdown">
+        <button class="dropbutton">Fred the Baker</button>
+        <div class="dropdown-content">
+          <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+        </div>
+        <button class="dropbutton">Inspiration</button>
+        <div class="dropdown-content">
+          <a href="#">Cookie Counter</a>
+        </div>
+        <button class="dropbutton">Fred the Baker</button>
+        <div class="dropdown-content">
+          <a href="#">LinkedIn: Serena-Ann-Howard</a>
+        </div>
+      </div>
+      </nav>
+    </div>
+
+   
+    <div class="clickers">
+      <button id="button">CREATE DONUTS!</button>
+         <p>Donuts:<span id ="clicks">0</span></p>
+     <button type="auto-clicker">Auto Clicker</button>
+         <p>AutoClickers:<span id="clicks">0</span></p>
+     <button type="multiplier">Multiplier</button>
+         <p>Multipliers:<span id="clicks">0</span></p>
+    </div>
+    
+
+    <script type="module" src="./index.js"></script>
+    <script type="module" src="./DonutMaker.js"></script>
   </body>
 </html>
